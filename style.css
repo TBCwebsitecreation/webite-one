@@ -60,6 +60,12 @@ a.btn:hover{
   background-color:rgba(0,0,0,0.3);
 }
 
+#btn{
+  position: relative;
+  left: 55px;
+  
+}
+
 /* Header */
 header{
   height: 430px;
@@ -76,8 +82,8 @@ header a.logo {
   height: 140px;
   background: url('images/logp.png') no-repeat 0 0;
   background-size: contain;
-  top: 15px;
-  left: 20px;
+  top: 25px;
+  left: 10px;
 }
 header a.logo span{
   display: none;
@@ -87,7 +93,7 @@ header div.hero {
   position: absolute;
   width: 42%;
   top: 130px;
-  left: 55%;
+  left: 65%;
 }
 header div.hero h1{
   line-height: 1em;
@@ -128,4 +134,14 @@ section.main aside h3 a {
 section.main aside h3 a:hover{
   text-decoration: underline;
   color: #2C3288;
+}
+section.main aside .content.trending{
+  background-image: url('images/icon_star.svg');
+}
+section.main aside .content.find-it {
+  background-image: url('images/icon_marker.svg');
+}
+
+section.main aside .content.tools {
+  background-image: url('images/icon_gear.svg');
 }
