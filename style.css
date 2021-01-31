@@ -2,16 +2,20 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 300;
   color: #555;
   margin: 0;
   padding: 0;
+  background-color: #03356A;
+
 }
+
 #page{
   max-width: 900px;
   margin: 0 auto;
   position: relative;
+  background-color:#EEE9D9;
 }
 
 /* Text */
@@ -61,16 +65,17 @@ a.btn:hover{
 
 #btn{
   position: relative;
-  left: 20px;
+  left: 45px;
   
 }
 
 /* Header */
 header{
-  height: 430px;
+  height: 330px;
   background: #cf0004
   url('images/banner1200x430.jpg') no-repeat center;
   position: relative;
+  
   
 }
 
@@ -78,12 +83,13 @@ header a.logo {
   z-index: 1;
   position: absolute;
   display: block;
-  width: 60px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background: url('images/logo.png') no-repeat 0 0;
   background-size: contain;
   top: 18px;
   left: 70px;
+  mix-blend-mode: screen;
 }
 
 header a.logo span{
@@ -93,8 +99,9 @@ header a.logo span{
 header div.hero {
   position: absolute;
   width: 42%;
-  top: 130px;
+  top: 120px;
   left: 65%;
+  
 }
 header div.hero h1{
   line-height: 1em;
@@ -118,6 +125,7 @@ section.main{
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 0;
+  background-color: #EEE9D9;
 }
 section.main aside{
   width:33%;
@@ -150,26 +158,25 @@ section.main aside h3 a:hover{
   color: #2C3288;
 }
 section.main aside .content.trending{
-  background-image: url('images/icon_star.svg');
+  background-image: url('images/star1.png');
   
 }
+
 section.main aside .content.find-it {
-  background-image: url('images/icon_marker.svg');
+  background-image: url('images/marker.png');
 }
 
 section.main aside .content.tools {
-  background-image: url('images/icon_gear.svg');
+  background-image: url('images/gear 2.png');
+  
 }
-.content img{
-  background-color: red;
-  height: 100px;
-  width: 100px;
-}
+ 
+
 
 /* section atmosphere */
 section.atmosphere{
-  background-color: #cc6633;
-  padding-top: 30px;
+  background-color: #02356A;
+   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
 }
@@ -208,9 +215,12 @@ section.how-to aside .content p{
 
 section.how-to aside .content a{
   display: inline-block;
-  color:  #cc6633;
+  color: #03356A;
   font-weight: 700;
   margin-bottom: 20px;
+}
+section.how-to aside .content a:hover{
+  color: #ac1bb1;
 }
 
 section.how-to blockquote{
@@ -262,12 +272,13 @@ section.how-to blockquote p.credit::before{
 
 /* navigation */
 nav {
-  background-color: rgba(0,0,0,.65);
+  background-color: #0238729b;
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 50px 0 0 0;
+  padding: 5px 0 0 0;
   width: 100%;
+  font-size: 0.8em;
 }
 nav::after{
   content:'';
@@ -336,7 +347,10 @@ nav > ul > li > a{
 footer{
   font-size: .8em;
   margin:40px;
-  color: #999;
+  color: rgb(179, 165, 165);
+  padding: 0 0 30px 0;
+ 
+ 
   
 }
 footer .content{
