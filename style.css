@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 
 body {
-  font-family: 'Open Sans',
-  sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #555;
@@ -10,7 +9,7 @@ body {
   padding: 0;
 }
 #page{
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
 }
@@ -38,10 +37,10 @@ h4 {
   font-weight: 700;
   line-height: 1.1em;
 }
-p{
+p {
   margin: 0 0 1em 0;
 }
-a{
+a {
   color: #007eff;
 }
 a:visited{
@@ -49,7 +48,7 @@ a:visited{
 }
 
 a.btn{
-  font-size: 1.2em;
+  font-size: 1.0em;
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
@@ -62,7 +61,7 @@ a.btn:hover{
 
 #btn{
   position: relative;
-  left: 55px;
+  left: 20px;
   
 }
 
@@ -76,15 +75,17 @@ header{
 }
 
 header a.logo {
+  z-index: 1;
   position: absolute;
   display: block;
-  width: 100px;
-  height: 140px;
-  background: url('images/logp.png') no-repeat 0 0;
+  width: 60px;
+  height: 70px;
+  background: url('images/logo.png') no-repeat 0 0;
   background-size: contain;
-  top: 25px;
-  left: 10px;
+  top: 18px;
+  left: 70px;
 }
+
 header a.logo span{
   display: none;
 }
@@ -101,6 +102,7 @@ header div.hero h1{
   color: white;
 
 }
+
 /* section all */
 section{
   padding: 0 30px;
@@ -120,7 +122,7 @@ section.main{
 section.main aside{
   width:33%;
   float: left;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 section.main .content{
@@ -128,12 +130,19 @@ section.main .content{
   background: no-repeat center top;
   background-size: 75px 75px;
   padding-top: 85px;
+  text-align: justify;
   /* padding-bottom: 30px; */
 }
+
+.heading-align {
+  text-align: center;
+}
+
 
 section.main aside h3 a {
   color: black;
   text-decoration: none;
+  
 }
 
 section.main aside h3 a:hover{
@@ -142,6 +151,7 @@ section.main aside h3 a:hover{
 }
 section.main aside .content.trending{
   background-image: url('images/icon_star.svg');
+  
 }
 section.main aside .content.find-it {
   background-image: url('images/icon_marker.svg');
@@ -149,6 +159,11 @@ section.main aside .content.find-it {
 
 section.main aside .content.tools {
   background-image: url('images/icon_gear.svg');
+}
+.content img{
+  background-color: red;
+  height: 100px;
+  width: 100px;
 }
 
 /* section atmosphere */
@@ -223,4 +238,118 @@ section.how-to blockquote p.credit{
   padding-left: 20px;
   line-height: 1.3em;
   position: relative;
+}
+
+section.how-to blockquote::before{
+  content:"\201c";
+  color: #d2bd65;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: 5em;
+  font-family: serif;
+}
+section.how-to blockquote p.quote::after{
+  content:"\201d";
+  font-family: serif;
+}
+section.how-to blockquote p.credit::before{
+  content:'\2014';
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+
+/* navigation */
+nav {
+  background-color: rgba(0,0,0,.65);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 50px 0 0 0;
+  width: 100%;
+}
+nav::after{
+  content:'';
+  display: block;
+  clear:both;
+
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+nav ul li:hover{
+  background-color: #2b0306;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 125px;
+  position: relative;
+}
+
+nav ul li a:visited {
+  color: #fff;
+}
+nav ul li a:hover {
+  background-color: #6d0911;
+}
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  background-color: #2b0306;
+  display: none;
+}
+nav ul ul li{
+  position: relative;
+  }
+
+nav ul ul ul {
+  left: 100%;
+  top: 0px;
+}
+
+/* top level */
+nav > ul {
+  padding-left: 200px;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav > ul > li > a{
+  width: auto;
+  padding: 10px 20px 15px 20px;
+}
+
+
+/* footer */
+footer{
+  font-size: .8em;
+  margin:40px;
+  color: #999;
+  
+}
+footer .content{
+  display: inline;
+}
+
+footer a{
+  margin-left: 30px;
+  color: #777;
+}
+footer a:visited {
+  color: #777;
+}
+footer a:visited {
+  color: #000;
 }
